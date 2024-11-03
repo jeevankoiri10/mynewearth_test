@@ -1,6 +1,7 @@
 import 'package:nylo_framework/nylo_framework.dart';
 import 'bootstrap/boot.dart';
 
+/// My New Earth
 /// Nylo - Framework for Flutter Developers
 /// Docs: https://nylo.dev/docs/6.x
 
@@ -15,5 +16,3 @@ void main() async {
     // File: lib/resources/widgets/splash_screen.dart
   );
 }
-
-// MyNewEarth Copy
