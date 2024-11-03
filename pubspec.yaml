@@ -45,7 +45,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "public/app_icon/icon.png"
+  image_path: "public/app_icon/mynewearth-feature.png"
   remove_alpha_ios: true
 
 # RENAME YOUR PROJECT

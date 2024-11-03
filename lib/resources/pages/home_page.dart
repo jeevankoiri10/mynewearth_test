@@ -35,38 +35,54 @@ class _HomePageState extends NyPage<HomePage> {
   @override
   Widget view(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-          showToastSuccess(title: "Hello 👋", description: "Welcome to Nylo");
-        },
-        child: const Icon(Icons.notifications),
+      appBar: AppBar(
+        flexibleSpace: SafeArea(
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: const Logo(
+              height: 100,
+              width: 200,
+            ),
+          ),
+        ),
+        actions: [ThemeToggle()],
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () async {
+      //     showToastSuccess(title: "Hello 👋", description: "Welcome to Nylo");
+      //   },
+      //   child: const Icon(Icons.notifications),
+      // ),
       body: SafeAreaWidget(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Logo(),
           Text(
             getEnv("APP_NAME"),
           ).displayMedium(color: context.color.content),
-          const Text("Micro-framework for Flutter", textAlign: TextAlign.center)
+          const Text("Holistic Wellness Application",
+                  textAlign: TextAlign.center)
               .titleMedium(color: context.color.primaryAccent),
-          const Text("Build something amazing 💡", textAlign: TextAlign.center)
+          const Text("Be Amazing💡", textAlign: TextAlign.center)
               .bodyMedium()
               .alignCenter(),
+          SizedBox(
+            height: 50,
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               const Divider(),
+              const Text("Offerings Lists")
+                  .displaySmall(color: context.color.content),
+              const Divider(),
               Container(
-                height: 250,
+                height: 400,
                 width: double.infinity,
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 decoration: BoxDecoration(
                     color: context.color.surfaceBackground,
                     borderRadius: BorderRadius.circular(8),
@@ -169,7 +185,6 @@ class _HomePageState extends NyPage<HomePage> {
               const Text(
                 "Framework Version: $nyloVersion",
               ).bodyMedium().setColor(context, (color) => Colors.grey),
-              ThemeToggle(),
             ],
           ),
         ],
