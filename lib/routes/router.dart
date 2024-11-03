@@ -1,6 +1,3 @@
-import '/resources/pages/edit_offering_page.dart';
-import '/resources/pages/offerings_list_page.dart';
-import '/resources/pages/profile_page.dart';
 import '/resources/pages/not_found_page.dart';
 import '/resources/pages/home_page.dart';
 import 'package:nylo_framework/nylo_framework.dart';
@@ -20,6 +17,7 @@ import 'package:nylo_framework/nylo_framework.dart';
 
 appRouter() => nyRoutes((router) {
       router.add(HomePage.path).initialRoute();
+      // router.route(OfferingsListPage.path, (context) => OfferingsListPage());
       // Add your routes here
 
       // router.add(NewPage.path, transition: PageTransitionType.fade);
@@ -32,7 +30,4 @@ appRouter() => nyRoutes((router) {
       //
       // });
       router.add(NotFoundPage.path).unknownRoute();
-      router.add(ProfilePage.path);
-  router.add(OfferingsListPage.path);
-  router.add(EditOfferingPage.path);
-});
+    });

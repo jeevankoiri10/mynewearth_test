@@ -64,9 +64,9 @@ class _HomePageState extends NyPage<HomePage> {
           const Text("Holistic Wellness Application",
                   textAlign: TextAlign.center)
               .titleMedium(color: context.color.primaryAccent),
-          const Text("Be Amazing💡", textAlign: TextAlign.center)
-              .bodyMedium()
-              .alignCenter(),
+          // const Text("Be Amazing💡", textAlign: TextAlign.center)
+          //     .bodyMedium()
+          //     .alignCenter(),
           SizedBox(
             height: 50,
           ),
