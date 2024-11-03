@@ -15,3 +15,5 @@ void main() async {
     // File: lib/resources/widgets/splash_screen.dart
   );
 }
+
+// MyNewEarth Copy

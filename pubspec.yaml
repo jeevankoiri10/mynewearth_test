@@ -7,12 +7,12 @@
 name: flutter_app
 description: A new Nylo Flutter application.
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: ">=3.4.0 <4.0.0"
   flutter: ">=3.24.0 <4.0.0"
 dependencies:
   url_launcher: ^6.2.6
@@ -36,7 +36,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.14.1
   # The following line 'flutter_lints' activates a set of recommended lints for Flutter apps,
   # packages, and plugins designed to encourage good coding practices.
-#  flutter_lints: ^5.0.0
+  #  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
@@ -52,7 +52,6 @@ flutter_launcher_icons:
 # flutter pub run rename setAppName --targets ios,android --value "YourAppName"
 
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
